@@ -1,0 +1,136 @@
+chat gpt examples
+
+
+from http.server import BaseHTTPRequestHandler, HTTPServer
+import json
+
+class SimpleHandler(BaseHTTPRequestHandler):
+    def _send_response(self, status_code, response_body):
+        self.send_response(status_code)
+        self.send_header('Content-type', 'application/json')
+        self.end_headers()
+        self.wfile.write(json.dumps(response_body).encode('utf-8'))
+
+    def do_GET(self):
+        if self.path == '/api':
+            response_body = {'message': 'Hello, this is your API!'}
+            self._send_response(200, response_body)
+        else:
+            self._send_response(404, {'error': 'Endpoint not found'})
+
+def run(server_class=HTTPServer, handler_class=SimpleHandler, port=8000):
+    server_address = ('', port)
+    httpd = server_class(server_address, handler_class)
+    print(f'Starting server on port {port}')
+    httpd.serve_forever()
+
+if __name__ == '__main__':
+    run()
+
+
+
+
+import hmac
+import hashlib
+
+# Secret key for authentication
+secret_key = b'my_secret_key'
+
+# Function to generate an HMAC for a given message
+def generate_hmac(message):
+    return hmac.new(secret_key, message.encode('utf-8'), hashlib.sha256).hexdigest()
+
+# Example usage
+message_to_authenticate = 'This is a secure message'
+generated_hmac = generate_hmac(message_to_authenticate)
+
+# Simulate sending the message and HMAC over a network
+# On the receiving end, re-calculate the HMAC and compare it with the received one
+received_hmac = generate_hmac(message_to_authenticate)
+
+if hmac.compare_digest(generated_hmac, received_hmac):
+    print("Authentication successful")
+else:
+    print("Authentication failed")
+
+
+
+
+
+import sqlite3
+
+# Connect to the SQLite database (creates a new database if not exists)
+conn = sqlite3.connect('example.db')
+
+# Create a cursor object to interact with the database
+cursor = conn.cursor()
+
+# Create a table (you can skip this if the table already exists)
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS users (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        username TEXT NOT NULL,
+        email TEXT NOT NULL
+    )
+''')
+
+# Insert some data into the table
+cursor.execute('INSERT INTO users (username, email) VALUES (?, ?)', ('john_doe', 'john@example.com'))
+
+# Commit the changes to the database
+conn.commit()
+
+# Query the database
+cursor.execute('SELECT * FROM users')
+rows = cursor.fetchall()
+
+# Print the results
+for row in rows:
+    print(row)
+
+# Close the cursor and the connection
+cursor.close()
+conn.close()
+
+
+
+
+
+
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+
+# Email configuration
+sender_email = 'your_email@gmail.com'
+receiver_email = 'recipient_email@example.com'
+subject = 'Test Email'
+body = 'This is a test email sent from Python.'
+
+# Create the MIME object
+message = MIMEMultipart()
+message['From'] = sender_email
+message['To'] = receiver_email
+message['Subject'] = subject
+
+# Attach the body to the email
+message.attach(MIMEText(body, 'plain'))
+
+# SMTP server configuration (for Gmail in this example)
+smtp_server = 'smtp.gmail.com'
+smtp_port = 587
+smtp_username = 'your_email@gmail.com'
+smtp_password = 'your_email_password'
+
+# Create the SMTP connection
+with smtplib.SMTP(smtp_server, smtp_port) as server:
+    # Start the TLS connection (for security)
+    server.starttls()
+
+    # Login to the email server
+    server.login(smtp_username, smtp_password)
+
+    # Send the email
+    server.sendmail(sender_email, receiver_email, message.as_string())
+
+print('Email sent successfully.')

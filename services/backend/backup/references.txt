@@ -1,0 +1,307 @@
+
+Test Instructions
+------------------------------
+This task should take approximately 2 hours to complete
+Please send us your solution within 7 days, or let us know if you need more time
+Feel free to utilize all available public resources for additional information. The use of AI tools is welcome in this task, if you decide to utilize an AI tool please also provide some guidance for us on what tool you used and how for our reference
+If you still have questions about any of the below tasks, feel free to reply to this email
+
+Background
+------------------------------
+Many websites allow their visitors to create a customized personal account.
+This is usually done through a web interface that allows new users to register by completing a registration form.
+
+This task includes designing and implementing a backend that possesses the functions outlined below. The necessary data should be stored in an SQL database. Please develop a suitable schema and create a Python module that provides the functionality described below. For this task, you are not expected to connect a website (or even write HTML for the site), maintain web sessions via cookies or similar.
+
+Registration
+------------------------------
+A new user can register with their email address and password of choice. Once the registration process is complete, the user will receive a confirmation email. This email will contain a link that needs to be clicked on in order to activate the account.
+Note: Sending an actual email or routing the request when the user clicks on the activation link is not part of the task.
+
+Authentication
+------------------------------
+Users enter their email address and password to log in.
+The authentication should only be successful if a valid combination of email and password is provided.
+
+Implementation Notes
+------------------------------
+Please only use Python 3 standard libraries in your solution. You may use pytest or any other testing framework for testing your code.
+For the sake of simplicity, please use sqlite3 in order to connect to the database.
+Please record your solution in an appropriate way. We are especially interested in a discussion of your chosen implementation as compared to other possible approaches.
+You may use any tools you deem useful for this task - we only ask that you mention if you used any coding assistants.
+
+Best of luck and we’re looking forward to reviewing your results!
+
+
+
+----------------------------------------------------------------------------
+##############################################################
+vuejs
+##############################################################
+
+https://cli.vuejs.org/
+----------------------------------------------------------------------------
+
+
+
+##############################################################
+api-platform.com
+##############################################################
+
+https://api-platform.com/docs/core/state-processors/
+
+
+----------------------------------------------------------------------------
+
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDcwNTkwNDgsInN1YiI6IjIifQ.v-HBeuhMfERbGGEQs3YX_uRpThoUAVGaeKhei4K05kg
+Authorization: Bearer <access_token>
+
+
+
+ sqlite is part of the standard library, and does not need installing.
+
+
+
+##############################################################
+fastapi
+##############################################################
+
+https://tortoise.github.io/getting_started.html#optional-accelerators
+https://tortoise.github.io/index.html
+
+https://docs.pydantic.dev/latest/concepts/models/
+https://sqlmodel.tiangolo.com/tutorial/fastapi/
+
+
+https://alembic.sqlalchemy.org/en/latest/
+https://devdocs.io/fastapi/
+https://www.sqlalchemy.org/
+
+--------------
+
+https://fastapi.tiangolo.com/tutorial/body-nested-models/
+https://fastapi.tiangolo.com/tutorial/sql-databases/#
+https://fastapi.tiangolo.com/tutorial/first-steps/#
+https://fastapi.tiangolo.com/tutorial/
+https://fastapi.tiangolo.com/tutorial/query-params-str-validations/
+https://fastapi.tiangolo.com/advanced/security/http-basic-auth/
+https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/#
+https://fastapi.tiangolo.com/tutorial/security/simple-oauth2/
+https://fastapi.tiangolo.com/tutorial/security/first-steps/
+https://fastapi.tiangolo.com/tutorial/security/
+https://fastapi.tiangolo.com/tutorial/cors/
+https://fastapi.tiangolo.com/advanced/templates/
+https://fastapi.tiangolo.com/advanced/generate-clients/
+https://fastapi.tiangolo.com/advanced/websockets/
+https://fastapi.tiangolo.com/
+https://fastapi.tiangolo.com/tutorial/header-params/
+https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/
+https://fastapi-tutorial.readthedocs.io/en/latest/
+https://fastapi-users.github.io/fastapi-users/12.1/usage/flow/
+https://fastapi-users.github.io/fastapi-users/12.1/usage/flow/
+https://fastapi-users.github.io/fastapi-users/12.1/usage/routes/
+https://fastapi.tiangolo.com/
+https://fastapi.tiangolo.com/#installation
+https://fastapi.tiangolo.com/tutorial/
+https://fastapi.tiangolo.com/tutorial/body/
+https://fastapi.tiangolo.com/tutorial/body/
+https://fastapi.tiangolo.com/tutorial/first-steps/
+https://fastapi.tiangolo.com/tutorial/first-steps/
+https://fastapi.tiangolo.com/tutorial/query-params/
+https://fastapi.tiangolo.com/tutorial/query-params/
+https://fastapi.tiangolo.com/tutorial/security/first-steps/
+https://fastapi.tiangolo.com/tutorial/sql-databases/
+https://fastapi.tiangolo.com/tutorial/sql-databases/
+https://fastapi.tiangolo.com/tutorial/sql-databases/
+https://fastapi.tiangolo.com/tutorial/sql-databases/#__tabbed_1_2
+
+--------------
+
+https://auth0.com/blog/build-and-secure-fastapi-server-with-auth0/
+https://bobbyhadz.com/blog/python-fastapi-error-loading-asgi-app-could-not-import-module
+https://christophergs.com/tutorials/ultimate-fastapi-tutorial-pt-12-react-js-frontend/
+https://code.visualstudio.com/docs/python/tutorial-fastapi
+https://code.visualstudio.com/docs/python/tutorial-fastapi
+https://devdocs.io/fastapi/
+https://docs.python.org/3/library/http.client.html
+https://hellocoding.de/blog/coding-language/python/fastapi
+https://medium.com/@chnarsimha986/fastapi-login-logout-changepassword-4c12e92d41e2
+https://medium.com/geekculture/communicate-via-json-payload-and-upload-files-in-fastapi-244bdbc447dd
+https://pypi.org/project/fastapi-users/
+https://pypi.org/project/pydantic/
+https://pypi.org/project/pydantic/
+https://realpython.com/fastapi-python-web-apis/
+https://realpython.com/fastapi-python-web-apis/
+https://realpython.com/fastapi-python-web-apis/
+https://reqbin.com/req/c-hlt4gkzd/curl-bearer-token-authorization-header-example
+https://stackoverflow.com/questions/22229996/basic-http-and-bearer-token-authentication
+https://stackoverflow.com/questions/53586448/attributeerror-module-bcrypt-has-no-attribute-hashpw-for-python
+https://stackoverflow.com/questions/62994795/how-to-secure-fastapi-api-endpoint-with-jwt-token-based-authorization
+https://stackoverflow.com/questions/64379089/how-to-read-body-as-any-valid-json
+https://stackoverflow.com/questions/65270624/how-to-connect-to-a-sqlite3-db-file-and-fetch-contents-in-fastapi
+https://stackoverflow.com/questions/65270624/how-to-connect-to-a-sqlite3-db-file-and-fetch-contents-in-fastapi
+https://strawberry.rocks/docs/integrations/pydantic
+https://swagger.io/docs/specification/authentication/bearer-authentication/
+https://testdriven.io/blog/developing-a-single-page-app-with-fastapi-and-vuejs/#
+https://testdriven.io/blog/fastapi-react/
+https://thepythoncode.com/article/fullstack-notes-app-with-fastapi-and-reactjs
+https://www.datacamp.com/tutorial/introduction-fastapi-tutorial
+https://www.freecodecamp.org/news/fastapi-quickstart/
+https://www.freecodecamp.org/news/fastapi-quickstart/
+https://www.freecodecamp.org/news/fastapi-quickstart/#mongo
+https://www.freecodecamp.org/news/how-to-add-jwt-authentication-in-fastapi/
+https://www.freecodecamp.org/news/how-to-add-jwt-authentication-in-fastapi/
+https://www.mongodb.com/developer/languages/python/farm-stack-fastapi-react-mongodb/
+https://www.propelauth.com/post/react-fast-api-starter-guide
+https://www.tutorialspoint.com/fastapi/fastapi_pydantic.htm
+https://www.tutorialspoint.com/fastapi/fastapi_query_parameters.htm
+https://www.tutorialspoint.com/fastapi/fastapi_request_body.htm
+
+
+github
+https://github.com/fastapi-users/fastapi-users
+https://github.com/fuegoio/fastapi-frontend-auth-example
+https://github.com/microsoft/cookiecutter-spacy-fastapi
+https://github.com/pydantic/pydantic
+https://github.com/testdrivenio/fastapi-crud-async
+https://github.com/testdrivenio/fastapi-jwt
+https://github.com/testdrivenio/fastapi-react
+https://github.com/testdrivenio/fastapi-vue
+https://github.com/testdrivenio/fastapi-vue/tree/main
+https://github.com/tiangolo/fastapi
+https://github.com/tiangolo/fastapi/discussions/4497
+https://github.com/tiangolo/full-stack-fastapi-couchbase
+https://github.com/tiangolo/full-stack-fastapi-postgresql
+
+jwt
+https://testdriven.io/blog/fastapi-jwt-auth/
+https://jwt.io/introduction
+https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/
+https://testdriven.io/blog/fastapi-jwt-auth/
+https://testdriven.io/blog/fastapi-jwt-auth/
+
+rest
+https://www.home-assistant.io/integrations/rest/
+https://developers.home-assistant.io/docs/api/rest/
+
+sqlite
+https://www.tutorialspoint.com/sqlalchemy/sqlalchemy_core_selecting_rows.htm
+https://www.w3resource.com/sqlite/sqlite-insert-into.php
+https://www.tutorialspoint.com/sqlite/sqlite_insert_query.htm
+https://www.python-lernen.de/sqlite-insert-into-datensatz-speichern.htm#
+https://www.sqlitetutorial.net/sqlite-insert/
+https://sqlitebrowser.org/dl/
+https://docs.sqlalchemy.org/en/20/tutorial/data_select.html
+https://docs.sqlalchemy.org/en/20/tutorial/metadata.html
+https://docs.sqlalchemy.org/en/14/tutorial/data_select.html
+https://www.tutorialspoint.com/sqlalchemy/sqlalchemy_core_selecting_rows.htm#
+https://www.datacamp.com/tutorial/sqlalchemy-tutorial-examples
+https://docs.sqlalchemy.org/en/14/orm/tutorial.html
+
+
+smtp
+https://mailcatcher.me/
+https://hub.docker.com/r/schickling/mailcatcher/
+https://github.com/schickling/dockerfiles/blob/master/mailcatcher/Dockerfile
+https://thomas-falkner.de/2015/02/12/lokaler-mailserver-mit-mailcatcher-unter-windows/
+https://serversforhackers.com/c/setting-up-mailcatcher
+https://mailcatcher.me/
+https://docs.python.org/3/library/email.examples.html
+https://docs.python.org/3/library/smtplib.html
+https://stackoverflow.com/questions/64505/sending-mail-from-python-using-smtp
+https://stackoverflow.com/questions/882712/send-html-emails-with-python
+
+--------------------------------------------------------------
+
+
+https://github.com/ChristopherGS/ultimate-fastapi-tutorial/tree/main/part-10-jwt-auth
+https://christophergs.com/tutorials/ultimate-fastapi-tutorial-pt-10-auth-jwt/
+
+./app
+├── __init__.py
+├── api
+│  ├── __init__.py
+│  ├── api_v1
+│  │  ├── __init__.py
+│  │  ├── api.py          ----> UPDATED
+│  │  └── endpoints
+│  │     ├── __init__.py
+│  │     ├── auth.py      ----> ADDED
+│  │     └── recipe.py
+│  └── deps.py            ----> UPDATED
+├── backend_pre_start.py  ----> UPDATED
+├── core
+│  ├── __init__.py
+│  ├── auth.py            ----> ADDED
+│  ├── config.py          ----> UPDATED
+│  └── security.py        ----> ADDED
+├── crud
+│  ├── __init__.py
+│  ├── base.py
+│  ├── crud_recipe.py
+│  └── crud_user.py       ----> UPDATED
+├── db
+│  ├── __init__.py
+│  ├── base.py
+│  ├── base_class.py
+│  ├── init_db.py
+│  └── session.py
+├── initial_data.py
+├── main.py
+├── models
+│  ├── __init__.py
+│  ├── recipe.py
+│  └── user.py            ----> UPDATED
+├── schemas
+│  ├── __init__.py
+│  ├── recipe.py
+│  └── user.py            ----> UPDATED
+└── templates
+   └── index.html
+
+
+
+ pip list
+
+ aiosmtplib        2.0.2
+aiosqlite         0.19.0
+annotated-types   0.6.0
+anyio             4.2.0
+bcrypt            4.0.1
+blinker           1.7.0
+click             8.1.7
+databases         0.8.0
+dnspython         2.5.0
+ecdsa             0.18.0
+email-validator   2.1.0.post1
+fastapi           0.109.1
+fastapi-mail      1.4.1
+greenlet          3.0.3
+h11               0.14.0
+idna              3.6
+Jinja2            3.1.3
+MarkupSafe        2.1.5
+passlib           1.7.4
+pip               24.0
+pyasn1            0.5.1
+pydantic          2.6.0
+pydantic_core     2.16.1
+pydantic-settings 2.1.0
+PyJWT             2.8.0
+python-dotenv     1.0.1
+python-jose       3.3.0
+python-multipart  0.0.7
+rsa               4.9
+setuptools        65.5.1
+six               1.16.0
+sniffio           1.3.0
+SQLAlchemy        1.4.51
+starlette         0.35.1
+typing_extensions 4.9.0
+uvicorn           0.27.0.post1
+wheel             0.40.0
+
+
+
+https://pypi.org/project/SQLAlchemy/
+https://www.geeksforgeeks.org/convert-integer-to-string-in-python/
